@@ -12,564 +12,584 @@ content="Ibrahim Salisu Hub - Business, Technology, Islamic Education and Da'wah
 
 <style>
 
+/* =========================
+   GENERAL
+========================= */
+
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    line-height:1.6;
-    color:#183126;
-    background:#f7faf8;
+font-family:Arial, Helvetica, sans-serif;
+line-height:1.6;
+color:#183126;
+background:#f5f9f7;
 }
 
 a{
-    text-decoration:none;
-    color:inherit;
-}
-
-img{
-    max-width:100%;
+text-decoration:none;
+color:inherit;
 }
 
 .container{
-    width:92%;
-    max-width:1150px;
-    margin:auto;
+width:92%;
+max-width:1100px;
+margin:auto;
 }
 
-/* ================= HEADER ================= */
+
+/* =========================
+   HEADER
+========================= */
 
 header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:#ffffff;
-    border-bottom:1px solid #dfe8e2;
-    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:1000;
+background:#ffffff;
+border-bottom:1px solid #dfe8e2;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 .navbar{
-    min-height:78px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
+min-height:78px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px;
 }
 
 .brand{
-    display:flex;
-    align-items:center;
-    gap:12px;
+display:flex;
+align-items:center;
+gap:12px;
+min-width:0;
 }
 
 .logo{
-    width:58px;
-    height:58px;
-    border-radius:12px;
-    object-fit:cover;
-    display:block;
+width:65px;
+height:65px;
+object-fit:cover;
+border-radius:50%;
+border:2px solid #d9ece0;
+flex-shrink:0;
 }
 
 .brand-text strong{
-    display:block;
-    font-size:20px;
-    color:#153d2b;
+display:block;
+font-size:20px;
+color:#173f2d;
 }
 
 .brand-text small{
-    display:block;
-    color:#68766e;
-    font-size:13px;
-    margin-top:2px;
+display:block;
+color:#68766e;
+font-size:13px;
+margin-top:3px;
 }
 
 nav{
-    display:flex;
-    align-items:center;
-    gap:20px;
+display:flex;
+gap:18px;
+align-items:center;
 }
 
 nav a{
-    font-size:14px;
-    font-weight:bold;
-    color:#315044;
-    transition:0.3s;
+font-weight:bold;
+color:#234b38;
 }
 
 nav a:hover{
-    color:#16804b;
+color:#16804d;
 }
 
-/* ================= HERO ================= */
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
-    background:linear-gradient(135deg,#0e4b30,#17633f,#20734a);
-    color:white;
-    padding:90px 0 100px;
+background:#155b3d;
+color:white;
+padding:75px 0 85px;
 }
 
 .hero-grid{
-    display:grid;
-    grid-template-columns:1.5fr 0.8fr;
-    align-items:center;
-    gap:50px;
+display:grid;
+grid-template-columns:1fr 300px;
+align-items:center;
+gap:45px;
 }
 
-.eyebrow{
-    color:#bfe7ce;
-    font-size:15px;
-    font-weight:bold;
-    letter-spacing:2px;
+.hero .eyebrow{
+color:#bfe7ce;
+font-weight:bold;
+letter-spacing:2px;
 }
 
 .hero h1{
-    font-size:clamp(42px,6vw,72px);
-    line-height:1.05;
-    margin:14px 0;
+font-size:clamp(40px,6vw,70px);
+line-height:1.05;
+margin:12px 0;
 }
 
-.hero h1 span{
-    color:#d9b83f;
+.hero h2{
+font-size:24px;
+margin-bottom:15px;
 }
 
-.hero-subtitle{
-    font-size:22px;
-    font-weight:bold;
-    color:#e7f3ec;
-    margin-bottom:18px;
-}
-
-.hero-text{
-    color:#dcece3;
-    font-size:18px;
-    max-width:650px;
+.hero p{
+color:#dcece3;
+font-size:18px;
+max-width:650px;
 }
 
 .buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:14px;
-    margin-top:30px;
+display:flex;
+gap:15px;
+margin-top:28px;
+flex-wrap:wrap;
 }
 
 .btn{
-    display:inline-block;
-    padding:15px 25px;
-    border-radius:12px;
-    font-weight:bold;
-    transition:0.3s;
+display:inline-block;
+padding:15px 25px;
+border-radius:12px;
+font-weight:bold;
+border:2px solid #d9ece0;
 }
 
 .btn-primary{
-    background:white;
-    color:#145433;
-}
-
-.btn-primary:hover{
-    transform:translateY(-2px);
-    background:#eaf7ef;
+background:white;
+color:#155b3d;
 }
 
 .btn-outline{
-    border:2px solid #9ed2b4;
-    color:white;
+background:transparent;
+color:white;
 }
 
-.btn-outline:hover{
-    background:white;
-    color:#145433;
+.btn:hover{
+opacity:.9;
 }
-
-/* PROFILE */
 
 .profile{
-    width:235px;
-    height:235px;
-    border-radius:50%;
-    border:7px solid #d9ece0;
-    overflow:hidden;
-    margin:auto;
-    background:#e8efeb;
-    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+width:240px;
+height:240px;
+border-radius:50%;
+border:7px solid #d9ece0;
+object-fit:cover;
+display:block;
+margin:auto;
 }
 
-.profile img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-}
 
-/* ================= SECTIONS ================= */
+/* =========================
+   SECTIONS
+========================= */
 
 section{
-    padding:80px 0;
+padding:70px 0;
 }
 
 .section-title{
-    text-align:center;
-    margin-bottom:45px;
+text-align:center;
+margin-bottom:40px;
 }
 
 .section-title h2{
-    font-size:36px;
-    color:#153d2b;
-    margin-bottom:10px;
+font-size:38px;
+color:#174d35;
+margin-bottom:8px;
 }
 
 .section-title p{
-    color:#68766e;
-    max-width:700px;
-    margin:auto;
+color:#68766e;
 }
 
-/* ================= CARDS ================= */
+
+/* =========================
+   CARDS
+========================= */
 
 .cards{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
 }
 
 .card{
-    background:white;
-    border:1px solid #dfe8e2;
-    border-radius:18px;
-    padding:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.04);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+background:white;
+border:1px solid #dfe8e2;
+border-radius:17px;
+padding:24px;
+box-shadow:0 5px 18px rgba(0,0,0,.04);
 }
 
 .card-icon{
-    font-size:42px;
-    margin-bottom:10px;
+font-size:35px;
+margin-bottom:10px;
 }
 
 .card h3{
-    margin:8px 0;
-    color:#183f2c;
+margin:8px 0;
+color:#174d35;
 }
 
 .card p{
-    color:#68766e;
+color:#68766e;
 }
 
-/* ================= ABOUT ================= */
+
+/* =========================
+   ABOUT
+========================= */
 
 .about{
-    background:#edf5f0;
+background:#edf5f0;
 }
 
 .about-box{
-    background:white;
-    border-radius:20px;
-    padding:35px;
-    border:1px solid #dfe8e2;
+background:white;
+border-radius:20px;
+padding:35px;
+border:1px solid #dfe8e2;
 }
 
 .about-box p{
-    color:#52645b;
-    margin-bottom:15px;
+color:#68766e;
+margin-bottom:15px;
 }
 
-/* ================= FEATURE ================= */
+.about-list{
+margin-top:20px;
+padding-left:20px;
+}
+
+.about-list li{
+margin-bottom:8px;
+}
+
+
+/* =========================
+   FEATURE
+========================= */
 
 .feature{
-    background:white;
-    border:1px solid #dfe8e2;
-    border-radius:20px;
-    padding:35px;
+background:#155b3d;
+color:white;
+border-radius:20px;
+padding:35px;
 }
 
-.feature h3{
-    color:#153d2b;
-    margin-bottom:15px;
+.feature h2{
+font-size:32px;
+margin-bottom:12px;
 }
 
-.feature ul{
-    padding-left:20px;
+.feature p{
+color:#dcece3;
 }
 
-.feature li{
-    margin:8px 0;
-    color:#52645b;
+.feature-list{
+margin-top:20px;
+display:grid;
+gap:10px;
 }
 
-/* ================= TECHNOLOGY ================= */
-
-.tech{
-    background:#f7faf8;
+.feature-list div{
+background:rgba(255,255,255,.08);
+padding:12px 15px;
+border-radius:10px;
 }
 
-.tech-card{
-    background:linear-gradient(135deg,#063c29,#11603d);
-    color:white;
-    border-radius:22px;
-    padding:35px;
-}
 
-.tech-card h3{
-    font-size:28px;
-    margin-bottom:15px;
-}
-
-.tech-card p{
-    color:#dcece3;
-}
-
-.tech-list{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:12px;
-    margin-top:20px;
-}
-
-.tech-item{
-    background:rgba(255,255,255,0.1);
-    padding:15px;
-    border-radius:10px;
-}
-
-/* ================= ISLAMIC ================= */
-
-.islamic{
-    background:#eef5f1;
-}
-
-.islamic-card{
-    background:white;
-    border-radius:20px;
-    padding:35px;
-    border:1px solid #dfe8e2;
-}
-
-.islamic-card h3{
-    color:#153d2b;
-    font-size:27px;
-    margin-bottom:15px;
-}
-
-.islamic-list{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
-    margin-top:20px;
-}
-
-.islamic-item{
-    padding:18px;
-    background:#f1f7f3;
-    border-radius:12px;
-}
-
-/* ================= GALLERY ================= */
+/* =========================
+   GALLERY
+========================= */
 
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
 }
 
-.gallery-card{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    border:1px solid #dfe8e2;
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+border:1px solid #dfe8e2;
 }
 
-.gallery-card img{
-    width:100%;
-    height:210px;
-    object-fit:cover;
-    display:block;
+
+/* =========================
+   ISLAMIC
+========================= */
+
+.islamic{
+background:#edf5f0;
 }
 
-.gallery-card h3{
-    padding:15px 18px 4px;
+.islamic-box{
+background:white;
+border-radius:20px;
+padding:40px;
+text-align:center;
+border:1px solid #dfe8e2;
 }
 
-.gallery-card p{
-    padding:0 18px 18px;
-    color:#68766e;
+.islamic-box h2{
+font-size:38px;
+color:#174d35;
+margin-bottom:15px;
 }
 
-/* ================= CONTACT ================= */
+.islamic-box p{
+color:#68766e;
+font-size:18px;
+}
+
+.resources{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:25px;
+}
+
+.resource{
+background:#f0f7f3;
+padding:15px;
+border-radius:12px;
+font-weight:bold;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact{
-    background:#0e3825;
-    color:white;
+background:#155b3d;
+color:white;
 }
 
 .contact .section-title h2{
-    color:white;
+color:white;
 }
 
 .contact .section-title p{
-    color:#cfe2d7;
+color:#dcece3;
 }
 
 .contact-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
 }
 
 .contact-card{
-    background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.15);
-    border-radius:16px;
-    padding:25px;
-    text-align:center;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+border-radius:16px;
+padding:25px;
+text-align:center;
 }
 
 .contact-card .icon{
-    font-size:35px;
-    margin-bottom:10px;
+font-size:35px;
+margin-bottom:10px;
 }
 
 .contact-card h3{
-    margin-bottom:5px;
+margin-bottom:7px;
 }
 
 .contact-card p{
-    color:#d5e8dc;
+color:#dcece3;
+word-break:break-word;
 }
 
-/* ================= FOOTER ================= */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-    background:#092719;
-    color:white;
-    padding:30px 0;
-    text-align:center;
+background:#102d1e;
+color:white;
+padding:30px 0;
+text-align:center;
 }
 
 footer p{
-    color:#cdded5;
-    font-size:14px;
+color:#cdded5;
+font-size:14px;
 }
 
-.footer-name{
-    font-size:20px;
-    font-weight:bold;
-    margin-bottom:8px;
+.footer-brand{
+font-size:22px;
+font-weight:bold;
+margin-bottom:8px;
 }
 
-/* ================= MOBILE ================= */
 
-@media(max-width:900px){
+/* =========================
+   MOBILE
+========================= */
 
-    nav{
-        display:none;
-    }
+@media(max-width:800px){
 
-    .hero{
-        padding:65px 0 80px;
-    }
-
-    .hero-grid{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-
-    .hero-text{
-        margin:auto;
-    }
-
-    .buttons{
-        justify-content:center;
-    }
-
-    .profile{
-        width:190px;
-        height:190px;
-    }
-
-    .cards,
-    .gallery{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
+.container{
+width:90%;
 }
 
-@media(max-width:600px){
+header{
+position:sticky;
+top:0;
+}
 
-    .navbar{
-        min-height:70px;
-    }
+.navbar{
+min-height:72px;
+}
 
-    .logo{
-        width:52px;
-        height:52px;
-    }
+.logo{
+width:55px;
+height:55px;
+}
 
-    .brand-text strong{
-        font-size:17px;
-    }
+.brand-text strong{
+font-size:16px;
+}
 
-    .brand-text small{
-        font-size:11px;
-    }
+.brand-text small{
+font-size:11px;
+}
 
-    .hero h1{
-        font-size:45px;
-    }
+nav{
+display:none;
+}
 
-    .hero-subtitle{
-        font-size:19px;
-    }
+.hero{
+padding:55px 0 70px;
+}
 
-    .hero-text{
-        font-size:17px;
-    }
+.hero-grid{
+grid-template-columns:1fr;
+text-align:center;
+gap:35px;
+}
 
-    section{
-        padding:60px 0;
-    }
+.hero h1{
+font-size:44px;
+}
 
-    .section-title h2{
-        font-size:30px;
-    }
+.hero h2{
+font-size:21px;
+}
 
-    .cards,
-    .gallery,
-    .tech-list,
-    .islamic-list{
-        grid-template-columns:1fr;
-    }
+.hero p{
+font-size:17px;
+}
 
-    .profile{
-        width:175px;
-        height:175px;
-    }
+.buttons{
+justify-content:center;
+}
 
-    .btn{
-        width:100%;
-        text-align:center;
-    }
+.profile{
+width:190px;
+height:190px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.gallery img{
+height:240px;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.resources{
+grid-template-columns:1fr;
+}
+
+.section-title h2{
+font-size:30px;
+}
+
+.about-box,
+.islamic-box,
+.feature{
+padding:25px;
+}
+
+.islamic-box h2{
+font-size:30px;
+}
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media(max-width:450px){
+
+.brand-text strong{
+font-size:14px;
+}
+
+.brand-text small{
+font-size:10px;
+}
+
+.logo{
+width:52px;
+height:52px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.btn{
+width:100%;
+text-align:center;
+}
+
+.profile{
+width:175px;
+height:175px;
+}
+
 }
 
 </style>
 </head>
 
+
 <body>
 
-<!-- ================= HEADER ================= -->
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -578,7 +598,7 @@ footer p{
 <a href="#home" class="brand">
 
 <img
-src="file_00000000646081f4bb5e429dd1f281f9.png"
+src="ibrahim-salisu-hub-logo.png"
 alt="Ibrahim Salisu Hub Logo"
 class="logo">
 
@@ -587,21 +607,21 @@ class="logo">
 <strong>IBRAHIM SALISU HUB</strong>
 
 <small>
-Business • Technology • Islamic Education &amp; Da'awah
+Business • Technology • Islamic Education & Da'awah
 </small>
 
 </div>
 
 </a>
 
+
 <nav>
 
 <a href="#home">Home</a>
 <a href="#services">Services</a>
 <a href="#about">About</a>
-<a href="#technology">Technology</a>
+<a href="#cybersecurity">Cyber Security</a>
 <a href="#islamic">Islamic Education</a>
-<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 
 </nav>
@@ -611,11 +631,12 @@ Business • Technology • Islamic Education &amp; Da'awah
 </header>
 
 
-<!-- ================= HOME ================= -->
 
-<main id="home">
+<!-- =========================
+     HERO
+========================= -->
 
-<section class="hero">
+<section class="hero" id="home">
 
 <div class="container hero-grid">
 
@@ -626,15 +647,14 @@ WELCOME TO MY DIGITAL HUB
 </div>
 
 <h1>
-IBRAHIM SALISU
-<span>HUB</span>
+IBRAHIM SALISU HUB
 </h1>
 
-<div class="hero-subtitle">
-Business • Technology • Islamic Education &amp; Da'wah
-</div>
+<h2>
+Business • Technology • Islamic Education & Da'wah
+</h2>
 
-<p class="hero-text">
+<p>
 Building businesses, exploring technology,
 and sharing beneficial knowledge.
 </p>
@@ -656,13 +676,10 @@ Contact Me
 
 <div>
 
-<div class="profile">
-
 <img
 src="IMG_20250615_102604.jpg"
-alt="Ibrahim Salisu">
-
-</div>
+alt="Ibrahim Salisu"
+class="profile">
 
 </div>
 
@@ -671,7 +688,10 @@ alt="Ibrahim Salisu">
 </section>
 
 
-<!-- ================= SERVICES ================= -->
+
+<!-- =========================
+     SERVICES
+========================= -->
 
 <section id="services">
 
@@ -682,8 +702,7 @@ alt="Ibrahim Salisu">
 <h2>My Services</h2>
 
 <p>
-Practical services and skills across construction,
-finishing, agriculture and digital technology.
+Professional services and areas of experience.
 </p>
 
 </div>
@@ -699,8 +718,8 @@ finishing, agriculture and digital technology.
 <h3>Construction</h3>
 
 <p>
-Building works, construction support and
-project management.
+Building works, construction support
+and project management.
 </p>
 
 </div>
@@ -713,8 +732,8 @@ project management.
 <h3>Painting</h3>
 
 <p>
-Interior and exterior painting with quality
-finishing.
+Interior and exterior painting
+and professional finishing.
 </p>
 
 </div>
@@ -727,8 +746,8 @@ finishing.
 <h3>Turollin</h3>
 
 <p>
-Decorative finishing and professional
-surface spraying.
+Decorative finishing and
+professional surface spraying.
 </p>
 
 </div>
@@ -741,8 +760,8 @@ surface spraying.
 <h3>Plastering</h3>
 
 <p>
-Wall plastering and professional wall
-finishing.
+Wall plastering and professional
+wall finishing.
 </p>
 
 </div>
@@ -750,13 +769,13 @@ finishing.
 
 <div class="card">
 
-<div class="card-icon">〰️</div>
+<div class="card-icon">🛠️</div>
 
 <h3>Screeding</h3>
 
 <p>
-Floor preparation and quality floor
-finishing.
+Professional floor screeding
+and surface preparation.
 </p>
 
 </div>
@@ -769,11 +788,12 @@ finishing.
 <h3>Farming</h3>
 
 <p>
-Agricultural activities and agribusiness
-development.
+Agriculture, farming activities
+and agribusiness development.
 </p>
 
 </div>
+
 
 </div>
 
@@ -782,9 +802,12 @@ development.
 </section>
 
 
-<!-- ================= ABOUT ================= -->
 
-<section id="about" class="about">
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
 
 <div class="container">
 
@@ -794,7 +817,7 @@ development.
 
 <p>
 A personal digital hub connecting business,
-technology and beneficial Islamic knowledge.
+technology and beneficial knowledge.
 </p>
 
 </div>
@@ -803,16 +826,16 @@ technology and beneficial Islamic knowledge.
 <div class="about-box">
 
 <p>
-<strong>Ibrahim Salisu Hub</strong> is a personal
-platform created to showcase business activities,
-technology learning, construction and agricultural
-services, as well as Islamic education and Da'wah.
+Ibrahim Salisu Hub is a personal digital platform
+created to bring together business activities,
+technology learning, construction services,
+agriculture and Islamic education.
 </p>
 
 <p>
-The goal is to build useful businesses, explore
-technology and share beneficial knowledge with
-people in the community and beyond.
+The goal is to build useful businesses,
+explore technology and share beneficial knowledge
+with people in the community and beyond.
 </p>
 
 <p>
@@ -821,190 +844,20 @@ for projects, skills, learning resources and
 future opportunities.
 </p>
 
-</div>
 
-</div>
+<ul class="about-list">
 
-</section>
+<li>Business and entrepreneurship</li>
 
+<li>Construction and building works</li>
 
-<!-- ================= TECHNOLOGY ================= -->
+<li>Painting, Turollin, plastering and screeding</li>
 
-<section id="technology" class="tech">
+<li>Agriculture and farming</li>
 
-<div class="container">
+<li>Cybersecurity and technology learning</li>
 
-<div class="section-title">
-
-<h2>Cyber Security &amp; Technology</h2>
-
-<p>
-Learning, awareness and responsible use of
-digital technology.
-</p>
-
-</div>
-
-
-<div class="tech-card">
-
-<h3>Cyber Security Awareness</h3>
-
-<p>
-Helping everyday internet users understand
-online safety and protect their digital accounts.
-</p>
-
-
-<div class="tech-list">
-
-<div class="tech-item">
-🔐 Online Safety
-</div>
-
-<div class="tech-item">
-🔑 Password Security
-</div>
-
-<div class="tech-item">
-🎣 Phishing Awareness
-</div>
-
-<div class="tech-item">
-🛡️ Cybersecurity Awareness
-</div>
-
-<div class="tech-item">
-📱 Mobile Security
-</div>
-
-<div class="tech-item">
-🌐 Safe Internet Practices
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= ISLAMIC EDUCATION ================= -->
-
-<section id="islamic" class="islamic">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Islamic Education &amp; Da'wah</h2>
-
-<p>
-Sharing beneficial Islamic knowledge and
-educational resources.
-</p>
-
-</div>
-
-
-<div class="islamic-card">
-
-<h3>Beneficial Knowledge</h3>
-
-<p>
-A section dedicated to Islamic learning,
-Qur'an, Sunnah and Da'wah materials.
-</p>
-
-
-<div class="islamic-list">
-
-<div class="islamic-item">
-📖 Qur'an &amp; Tafsir
-</div>
-
-<div class="islamic-item">
-🎧 Audio Lectures
-</div>
-
-<div class="islamic-item">
-🎥 Video Lectures
-</div>
-
-<div class="islamic-item">
-📄 PDF Resources
-</div>
-
-<div class="islamic-item">
-📚 Written Lessons
-</div>
-
-<div class="islamic-item">
-🕌 Islamic Da'wah
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= FEATURE ================= -->
-
-<section>
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>What I Do</h2>
-
-<p>
-Building practical skills and creating useful
-opportunities.
-</p>
-
-</div>
-
-
-<div class="feature">
-
-<h3>My Main Areas</h3>
-
-<ul>
-
-<li>
-Business and entrepreneurship
-</li>
-
-<li>
-Construction and building works
-</li>
-
-<li>
-Painting, Turollin, plastering and screeding
-</li>
-
-<li>
-Agriculture and farming
-</li>
-
-<li>
-Cybersecurity and technology learning
-</li>
-
-<li>
-Islamic education and Da'wah
-</li>
-
-<li>
-Digital portfolio and project development
-</li>
+<li>Islamic education and Da'wah</li>
 
 </ul>
 
@@ -1015,84 +868,40 @@ Digital portfolio and project development
 </section>
 
 
-<!-- ================= GALLERY ================= -->
 
-<section id="gallery">
+<!-- =========================
+     CYBER SECURITY
+========================= -->
+
+<section id="cybersecurity">
 
 <div class="container">
 
-<div class="section-title">
+<div class="feature">
 
-<h2>Projects &amp; Gallery</h2>
-
-<p>
-A showcase of my work, activities and interests.
-</p>
-
-</div>
-
-
-<div class="gallery">
-
-
-<div class="gallery-card">
-
-<img
-src="IMG_20250615_102604.jpg"
-alt="Ibrahim Salisu">
-
-<h3>My Profile</h3>
+<h2>
+🔐 Cyber Security Awareness
+</h2>
 
 <p>
-Ibrahim Salisu Hub.
+Helping everyday internet users understand
+online safety and protect their digital accounts.
 </p>
 
-</div>
 
+<div class="feature-list">
 
-<div class="gallery-card">
+<div>🔒 Online Safety</div>
 
-<div style="
-height:210px;
-display:flex;
-align-items:center;
-justify-content:center;
-background:#eaf3ed;
-font-size:70px;
-">
-🏗️
-</div>
+<div>🔑 Password Security</div>
 
-<h3>Construction</h3>
+<div>🎣 Phishing Awareness</div>
 
-<p>
-Building and construction activities.
-</p>
+<div>🛡️ Information Security</div>
+
+<div>🌐 Internet Safety</div>
 
 </div>
-
-
-<div class="gallery-card">
-
-<div style="
-height:210px;
-display:flex;
-align-items:center;
-justify-content:center;
-background:#eaf3ed;
-font-size:70px;
-">
-🌾
-</div>
-
-<h3>Farming</h3>
-
-<p>
-Agriculture and agribusiness.
-</p>
-
-</div>
-
 
 </div>
 
@@ -1101,19 +910,171 @@ Agriculture and agribusiness.
 </section>
 
 
-<!-- ================= CONTACT ================= -->
 
-<section id="contact" class="contact">
+<!-- =========================
+     ISLAMIC EDUCATION
+========================= -->
+
+<section class="islamic" id="islamic">
+
+<div class="container">
+
+<div class="islamic-box">
+
+<h2>
+Islamic Education & Da'wah
+</h2>
+
+<p>
+Sharing beneficial Islamic knowledge
+and educational resources.
+</p>
+
+
+<div class="resources">
+
+<div class="resource">
+📖 Qur'an & Tafsir
+</div>
+
+<div class="resource">
+🎧 Audio Lectures
+</div>
+
+<div class="resource">
+🎥 Video Lectures
+</div>
+
+<div class="resource">
+📄 PDF Resources
+</div>
+
+<div class="resource">
+📚 Written Lessons
+</div>
+
+<div class="resource">
+🕌 Islamic Knowledge
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     PROFILE / GALLERY
+========================= -->
+
+<section id="projects">
 
 <div class="container">
 
 <div class="section-title">
 
-<h2>Contact Me</h2>
+<h2>
+Projects & Gallery
+</h2>
 
 <p>
-Feel free to contact me for business,
-technology or educational opportunities.
+Some of my activities, work and interests.
+</p>
+
+</div>
+
+
+<div class="gallery">
+
+<img
+src="IMG_20250615_102604.jpg"
+alt="Ibrahim Salisu Profile">
+
+
+<img
+src="ibrahim-salisu-hub-logo.png"
+alt="Ibrahim Salisu Hub Logo">
+
+
+<div class="card">
+
+<div class="card-icon">🌾</div>
+
+<h3>Farming</h3>
+
+<p>
+Agriculture and agribusiness activities.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">🏠</div>
+
+<h3>Construction</h3>
+
+<p>
+Building works and construction services.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">💻</div>
+
+<h3>Technology</h3>
+
+<p>
+Cybersecurity and digital technology learning.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">📖</div>
+
+<h3>Islamic Education</h3>
+
+<p>
+Beneficial Islamic education and Da'wah.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Contact Me
+</h2>
+
+<p>
+You can contact me through the following channels.
 </p>
 
 </div>
@@ -1167,21 +1128,22 @@ ibrahimsalisu5678@gmail.com
 
 </section>
 
-</main>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
 <div class="container">
 
-<div class="footer-name">
+<div class="footer-brand">
 IBRAHIM SALISU HUB
 </div>
 
 <p>
-Business • Technology • Islamic Education &amp; Da'wah
+Business • Technology • Islamic Education & Da'wah
 </p>
 
 <p>
@@ -1189,7 +1151,9 @@ Building businesses, exploring technology,
 and sharing beneficial knowledge.
 </p>
 
-<p style="margin-top:15px;">
+<br>
+
+<p>
 © 2026 Ibrahim Salisu Hub. All Rights Reserved.
 </p>
 
