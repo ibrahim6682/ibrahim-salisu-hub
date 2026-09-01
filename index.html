@@ -1,1 +1,1651 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ibrahim Salisu Hub | Business & Marketplace</title>
+
+<meta name="description"
+content="Ibrahim Salisu Hub - Construction, Building Materials, Agriculture, Farm Supplies and Professional Services.">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+  color:#173f2d;
+  background:#f5f9f7;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+.container{
+  width:92%;
+  max-width:1150px;
+  margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#fff;
+  border-bottom:1px solid #dfe8e2;
+  box-shadow:0 2px 10px rgba(0,0,0,.06);
+}
+
+.header-inner{
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo{
+  width:62px;
+  height:62px;
+  object-fit:cover;
+  border-radius:50%;
+  flex-shrink:0;
+}
+
+.brand-text strong{
+  display:block;
+  font-size:19px;
+  color:#173f2d;
+}
+
+.brand-text small{
+  display:block;
+  font-size:12px;
+  color:#68766e;
+}
+
+nav{
+  display:flex;
+  gap:18px;
+}
+
+nav a{
+  font-weight:bold;
+  font-size:14px;
+  color:#234b39;
+}
+
+nav a:hover{
+  color:#16804d;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  background:#155b3d;
+  color:#fff;
+  padding:75px 20px 85px;
+  text-align:center;
+}
+
+.welcome{
+  color:#cde8d9;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:15px;
+}
+
+.hero h1{
+  font-size:clamp(42px,7vw,75px);
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.hero h2{
+  font-size:clamp(21px,4vw,32px);
+  margin-bottom:15px;
+}
+
+.hero p{
+  max-width:700px;
+  margin:0 auto 28px;
+  color:#dceee5;
+  font-size:19px;
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-bottom:45px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 25px;
+  border-radius:12px;
+  border:2px solid #d9eee3;
+  font-weight:bold;
+}
+
+.btn-primary{
+  background:#fff;
+  color:#155b3d;
+}
+
+.btn-outline{
+  color:#fff;
+}
+
+.btn-green{
+  background:#155b3d;
+  color:#fff;
+  border-color:#155b3d;
+}
+
+.profile{
+  width:230px;
+  height:230px;
+  object-fit:cover;
+  border-radius:50%;
+  margin:auto;
+  border:7px solid #d9eee3;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+  padding:70px 20px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:42px;
+}
+
+.section-title h2{
+  font-size:38px;
+  margin-bottom:8px;
+}
+
+.section-title p{
+  color:#68766e;
+  font-size:17px;
+}
+
+/* ================= BUSINESS ================= */
+
+.business{
+  background:#eef6f1;
+}
+
+.business-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+}
+
+.business-card{
+  background:#fff;
+  border:1px solid #dfe8e2;
+  border-radius:18px;
+  padding:32px;
+  box-shadow:0 5px 18px rgba(0,0,0,.05);
+}
+
+.business-icon{
+  font-size:48px;
+  margin-bottom:12px;
+}
+
+.business-card h3{
+  font-size:26px;
+  margin-bottom:10px;
+}
+
+.business-card p{
+  color:#68766e;
+  margin-bottom:20px;
+}
+
+/* ================= PRODUCTS ================= */
+
+.products{
+  background:#fff;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.product-card{
+  background:#f8fbf9;
+  border:1px solid #dfe8e2;
+  border-radius:16px;
+  padding:22px;
+}
+
+.product-icon{
+  font-size:35px;
+  margin-bottom:8px;
+}
+
+.product-card h3{
+  margin-bottom:8px;
+  color:#174b35;
+}
+
+.product-card p{
+  color:#68766e;
+  margin-bottom:12px;
+}
+
+.price-note{
+  font-weight:bold;
+  color:#16804d;
+  margin-bottom:15px;
+}
+
+.order-btn{
+  display:inline-block;
+  background:#155b3d;
+  color:white;
+  padding:10px 17px;
+  border-radius:9px;
+  font-weight:bold;
+}
+
+/* ================= SERVICES ================= */
+
+#services{
+  background:#f5f9f7;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.service-card{
+  background:#fff;
+  border:1px solid #dfe8e2;
+  border-radius:16px;
+  padding:25px;
+}
+
+.service-card span{
+  font-size:38px;
+}
+
+.service-card h3{
+  margin:10px 0;
+}
+
+.service-card p{
+  color:#68766e;
+}
+
+/* ================= AGRICULTURE ================= */
+
+.agriculture{
+  background:#eef6f1;
+}
+
+.agro-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.agro-card{
+  background:#fff;
+  border:1px solid #dfe8e2;
+  border-radius:16px;
+  padding:23px;
+}
+
+.agro-card h3{
+  margin-bottom:10px;
+}
+
+.agro-card p{
+  color:#68766e;
+}
+
+.agro-card ul{
+  padding-left:20px;
+  color:#68766e;
+}
+
+/* ================= ORDER ================= */
+
+.order-section{
+  background:#155b3d;
+  color:#fff;
+}
+
+.order-box{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+}
+
+.order-box h2{
+  font-size:40px;
+  margin-bottom:12px;
+}
+
+.order-box p{
+  color:#dceee5;
+  margin-bottom:25px;
+  font-size:18px;
+}
+
+.order-steps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.step{
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.20);
+  border-radius:14px;
+  padding:20px;
+}
+
+.step strong{
+  display:block;
+  font-size:18px;
+  margin-bottom:6px;
+}
+
+/* ================= ABOUT ================= */
+
+#about{
+  background:#fff;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.about-box{
+  background:#eef6f1;
+  padding:32px;
+  border-radius:18px;
+}
+
+.about-box h3{
+  font-size:28px;
+  margin-bottom:15px;
+}
+
+.about-box p{
+  color:#68766e;
+  margin-bottom:13px;
+}
+
+.leadership{
+  background:#155b3d;
+  color:#fff;
+  padding:32px;
+  border-radius:18px;
+}
+
+.leadership h3{
+  font-size:28px;
+  margin-bottom:15px;
+}
+
+.leadership p{
+  color:#dceee5;
+  margin-bottom:13px;
+}
+
+/* ================= TEAM ================= */
+
+#team{
+  background:#f5f9f7;
+}
+
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.team-card{
+  background:#fff;
+  border:1px solid #dfe8e2;
+  border-radius:16px;
+  padding:25px;
+  text-align:center;
+}
+
+.team-icon{
+  font-size:45px;
+  margin-bottom:10px;
+}
+
+.team-card h3{
+  margin-bottom:6px;
+}
+
+.team-card p{
+  color:#68766e;
+}
+
+/* ================= GALLERY ================= */
+
+#gallery{
+  background:#fff;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.gallery-item{
+  background:#f5f9f7;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid #dfe8e2;
+}
+
+.gallery-item img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+}
+
+.gallery-caption{
+  padding:18px;
+}
+
+.gallery-caption h3{
+  margin-bottom:5px;
+}
+
+.gallery-caption p{
+  color:#68766e;
+}
+
+/* ================= OTHER ACTIVITIES ================= */
+
+#activities{
+  background:#eef6f1;
+}
+
+.activity-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.activity-card{
+  background:#fff;
+  padding:27px;
+  border-radius:16px;
+  border:1px solid #dfe8e2;
+}
+
+.activity-card h3{
+  margin-bottom:10px;
+}
+
+.activity-card p{
+  color:#68766e;
+}
+
+/* ================= CONTACT ================= */
+
+#contact{
+  background:#155b3d;
+  color:#fff;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.contact-card{
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.20);
+  padding:25px;
+  border-radius:16px;
+  text-align:center;
+}
+
+.contact-icon{
+  font-size:35px;
+  margin-bottom:8px;
+}
+
+.contact-card p{
+  color:#dceee5;
+  word-break:break-word;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  background:#0e402b;
+  color:#dceee5;
+  text-align:center;
+  padding:30px 20px;
+}
+
+footer p{
+  margin:4px 0;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px){
+
+  .header-inner{
+    min-height:74px;
+  }
+
+  .logo{
+    width:55px;
+    height:55px;
+  }
+
+  .brand-text strong{
+    font-size:16px;
+  }
+
+  .brand-text small{
+    font-size:10px;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .hero{
+    padding:60px 18px 70px;
+  }
+
+  .hero h1{
+    font-size:44px;
+  }
+
+  .hero h2{
+    font-size:22px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .buttons{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .btn{
+    width:100%;
+    max-width:350px;
+    text-align:center;
+  }
+
+  .profile{
+    width:200px;
+    height:200px;
+  }
+
+  .business-grid,
+  .product-grid,
+  .service-grid,
+  .agro-grid,
+  .about-grid,
+  .team-grid,
+  .gallery-grid,
+  .activity-grid,
+  .contact-grid,
+  .order-steps{
+    grid-template-columns:1fr;
+  }
+
+  .section-title h2{
+    font-size:31px;
+  }
+
+  .gallery-item img{
+    height:auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+  <div class="container header-inner">
+
+    <a href="#home" class="brand">
+
+      <img
+        src="file_00000000646081f4bb5e429dd1f281f9.png"
+        alt="Ibrahim Salisu Hub Logo"
+        class="logo"
+      >
+
+      <div class="brand-text">
+        <strong>IBRAHIM SALISU HUB</strong>
+        <small>
+          Business • Construction • Agriculture
+        </small>
+      </div>
+
+    </a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#business">Business</a>
+      <a href="#services">Services</a>
+      <a href="#agriculture">Agriculture</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero">
+
+  <div class="container">
+
+    <div class="welcome">
+      WELCOME TO IBRAHIM SALISU HUB
+    </div>
+
+    <h1>
+      BUSINESS<br>
+      &amp; MARKETPLACE
+    </h1>
+
+    <h2>
+      Construction • Agriculture • Professional Services
+    </h2>
+
+    <p>
+      Quality products, practical services and reliable business
+      solutions for our customers and community.
+    </p>
+
+    <div class="buttons">
+
+      <a href="#business" class="btn btn-primary">
+        Explore Our Business
+      </a>
+
+      <a href="#contact" class="btn btn-outline">
+        Contact Us
+      </a>
+
+    </div>
+
+    <img
+      src="IMG_20250615_102604.jpg"
+      alt="Ibrahim Salisu"
+      class="profile"
+    >
+
+  </div>
+
+</section>
+
+
+<!-- ================= BUSINESS ================= -->
+
+<section id="business" class="business">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Our Business</h2>
+
+      <p>
+        We provide products and services in construction,
+        agriculture and related business activities.
+      </p>
+
+    </div>
+
+
+    <div class="business-grid">
+
+      <div class="business-card">
+
+        <div class="business-icon">🏗️</div>
+
+        <h3>
+          Construction &amp; Building Materials
+        </h3>
+
+        <p>
+          Building materials, construction supplies and
+          professional construction services.
+        </p>
+
+        <a href="#construction" class="btn btn-green">
+          View Materials
+        </a>
+
+      </div>
+
+
+      <div class="business-card">
+
+        <div class="business-icon">🌾</div>
+
+        <h3>
+          Agriculture &amp; Farm Supplies
+        </h3>
+
+        <p>
+          Farm inputs, seeds, fertilizers, equipment and
+          agricultural products.
+        </p>
+
+        <a href="#agriculture" class="btn btn-green">
+          View Farm Supplies
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONSTRUCTION ================= -->
+
+<section id="construction" class="products">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Construction &amp; Building Materials</h2>
+
+      <p>
+        Quality building materials available at affordable prices.
+      </p>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+      <div class="product-card">
+        <div class="product-icon">🧱</div>
+        <h3>Cement</h3>
+        <p>Quality cement for building and construction projects.</p>
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Cement.">
+          Order Now
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-icon">🔩</div>
+        <h3>Iron Rods</h3>
+        <p>Different sizes of reinforcement rods for construction.</p>
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Iron%20Rods.">
+          Order Now
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-icon">🧱</div>
+        <h3>Blocks</h3>
+        <p>Building blocks for different construction needs.</p>
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Blocks.">
+          Order Now
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-icon">🏖️</div>
+        <h3>Sand</h3>
+        <p>Sharp sand, plastering sand and other construction sand.</p>
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Sand.">
+          Order Now
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-icon">🪨</div>
+        <h3>Granite &amp; Chippings</h3>
+        <p>Granite and chippings for construction and concrete works.</p>
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Granite%20or%20Chippings.">
+          Order Now
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-icon">🧵</div>
+        <h3>Binding Wire</h3>
+        <p>Binding wire for reinforcement and construction work.</p>
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Binding%20Wire.">
+          Order Now
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-icon">🏠</div>
+        <h3>Roofing Materials</h3>
+        <p>Roofing sheets, nails, screws and roofing accessories.</p>
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Roofing%20Materials.">
+          Order Now
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-icon">🪵</div>
+        <h3>Timber &amp; Plywood</h3>
+        <p>Timber, plywood and materials for building projects.</p>
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Timber%20or%20Plywood.">
+          Order Now
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-icon">🎨</div>
+        <h3>Paint &amp; Finishing Materials</h3>
+        <p>Paint and materials for interior and exterior finishing.</p>
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Paint%20or%20Finishing%20Materials.">
+          Order Now
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-icon">🚰</div>
+        <h3>Plumbing Materials</h3>
+        <p>Pipes, fittings and other plumbing materials.</p>
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Plumbing%20Materials.">
+          Order Now
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-icon">💡</div>
+        <h3>Electrical Materials</h3>
+        <p>Electrical materials and accessories for building projects.</p>
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Electrical%20Materials.">
+          Order Now
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-icon">🔨</div>
+        <h3>Construction Tools</h3>
+        <p>Useful tools and equipment for construction work.</p>
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Construction%20Tools.">
+          Order Now
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Our Construction Services</h2>
+
+      <p>
+        Professional building and finishing services.
+      </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <span>🏗️</span>
+        <h3>Building Construction</h3>
+        <p>
+          General building and construction works.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <span>🧱</span>
+        <h3>Plastering</h3>
+        <p>
+          Wall plastering and professional finishing.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <span>🎨</span>
+        <h3>Painting</h3>
+        <p>
+          Interior and exterior painting services.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <span>🖌️</span>
+        <h3>Turollin / Spraying</h3>
+        <p>
+          Decorative finishing and spraying services.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <span>🔨</span>
+        <h3>Screeding</h3>
+        <p>
+          Floor preparation and finishing services.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <span>🏠</span>
+        <h3>Roofing</h3>
+        <p>
+          Roofing work and related construction services.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= AGRICULTURE ================= -->
+
+<section id="agriculture" class="agriculture">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Agriculture &amp; Farm Supplies</h2>
+
+      <p>
+        Farm inputs, equipment and agricultural products.
+      </p>
+
+    </div>
+
+
+    <div class="agro-grid">
+
+
+      <div class="agro-card">
+
+        <h3>🌱 Seeds</h3>
+
+        <p>We deal in agricultural seeds such as:</p>
+
+        <ul>
+          <li>Rice seeds</li>
+          <li>Maize seeds</li>
+          <li>Millet</li>
+          <li>Sorghum</li>
+          <li>Beans</li>
+          <li>Groundnut</li>
+          <li>Wheat</li>
+          <li>Sesame</li>
+          <li>Vegetable seeds</li>
+        </ul>
+
+        <br>
+
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Farm%20Seeds.">
+          Order Now
+        </a>
+
+      </div>
+
+
+      <div class="agro-card">
+
+        <h3>🌿 Fertilizers</h3>
+
+        <p>Farm fertilizers and soil nutrients.</p>
+
+        <ul>
+          <li>Urea</li>
+          <li>NPK</li>
+          <li>DAP</li>
+          <li>Organic fertilizer</li>
+          <li>Manure</li>
+        </ul>
+
+        <br>
+
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Fertilizer.">
+          Order Now
+        </a>
+
+      </div>
+
+
+      <div class="agro-card">
+
+        <h3>🧪 Agrochemicals</h3>
+
+        <p>
+          Crop protection products for agricultural activities.
+        </p>
+
+        <ul>
+          <li>Herbicides</li>
+          <li>Insecticides</li>
+          <li>Fungicides</li>
+          <li>Pesticides</li>
+          <li>Crop protection products</li>
+        </ul>
+
+        <br>
+
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Agrochemicals.">
+          Order Now
+        </a>
+
+      </div>
+
+
+      <div class="agro-card">
+
+        <h3>🚜 Farm Equipment</h3>
+
+        <p>Tools and equipment for farming.</p>
+
+        <ul>
+          <li>Knapsack sprayer</li>
+          <li>Water pump</li>
+          <li>Hose</li>
+          <li>Hoe</li>
+          <li>Cutlass</li>
+          <li>Shovel</li>
+          <li>Rake</li>
+          <li>Wheelbarrow</li>
+          <li>Watering can</li>
+          <li>Irrigation equipment</li>
+        </ul>
+
+        <br>
+
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Farm%20Equipment.">
+          Order Now
+        </a>
+
+      </div>
+
+
+      <div class="agro-card">
+
+        <h3>🌾 Farm Produce</h3>
+
+        <p>
+          Agricultural produce available according to season and stock.
+        </p>
+
+        <ul>
+          <li>Rice</li>
+          <li>Maize</li>
+          <li>Millet</li>
+          <li>Beans</li>
+          <li>Groundnut</li>
+          <li>Wheat</li>
+          <li>Sorghum</li>
+          <li>Sesame</li>
+        </ul>
+
+        <br>
+
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Farm%20Produce.">
+          Order Now
+        </a>
+
+      </div>
+
+
+      <div class="agro-card">
+
+        <h3>💧 Irrigation</h3>
+
+        <p>
+          Water management and irrigation supplies for farming.
+        </p>
+
+        <ul>
+          <li>Water pumps</li>
+          <li>Water hoses</li>
+          <li>Pipes</li>
+          <li>Irrigation accessories</li>
+        </ul>
+
+        <br>
+
+        <div class="price-note">
+          Affordable Price • Discount Available
+        </div>
+
+        <a class="order-btn"
+           href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20order%20Irrigation%20Supplies.">
+          Order Now
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ORDER ================= -->
+
+<section class="order-section">
+
+  <div class="container order-box">
+
+    <h2>How To Order</h2>
+
+    <p>
+      Contact us for today's price, availability, quantity and discount.
+    </p>
+
+    <div class="order-steps">
+
+      <div class="step">
+        <strong>1. Choose</strong>
+        Select the product or service you need.
+      </div>
+
+      <div class="step">
+        <strong>2. Contact Us</strong>
+        Send us your order through WhatsApp or phone.
+      </div>
+
+      <div class="step">
+        <strong>3. Confirm</strong>
+        We confirm availability, current price and delivery.
+      </div>
+
+    </div>
+
+    <br>
+
+    <a
+      class="btn btn-primary"
+      href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20make%20an%20order.">
+      Start an Order on WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>About Us</h2>
+
+      <p>
+        Building a reliable business for our customers and community.
+      </p>
+
+    </div>
+
+
+    <div class="about-grid">
+
+      <div class="about-box">
+
+        <h3>Who We Are</h3>
+
+        <p>
+          Ibrahim Salisu Hub is a growing business platform focused
+          on construction, building materials, agriculture and related
+          services.
+        </p>
+
+        <p>
+          We work with a team of workers, partners and business contacts
+          to serve customers and respond to market needs.
+        </p>
+
+        <p>
+          Our aim is to provide quality products, useful services,
+          affordable prices and good customer relationships.
+        </p>
+
+      </div>
+
+
+      <div class="leadership">
+
+        <h3>Our Leadership</h3>
+
+        <p>
+          <strong>Founder &amp; Business Lead:</strong>
+          Ibrahim Salisu
+        </p>
+
+        <p>
+          We work together with skilled workers, partners and
+          other members of our business network.
+        </p>
+
+        <p>
+          Every customer is important to us.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= TEAM ================= -->
+
+<section id="team">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Our Team</h2>
+
+      <p>
+        A team working together to serve our customers.
+      </p>
+
+    </div>
+
+
+    <div class="team-grid">
+
+      <div class="team-card">
+        <div class="team-icon">👨‍💼</div>
+        <h3>Business Leadership</h3>
+        <p>
+          Business coordination and management.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-icon">👷</div>
+        <h3>Construction Team</h3>
+        <p>
+          Skilled workers supporting building and finishing projects.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-icon">👨‍🌾</div>
+        <h3>Agriculture Team</h3>
+        <p>
+          Farming, farm supplies and agricultural activities.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Gallery</h2>
+
+      <p>
+        Ibrahim Salisu Hub.
+      </p>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+
+        <img
+          src="IMG_20250615_102604.jpg"
+          alt="Ibrahim Salisu"
+        >
+
+        <div class="gallery-caption">
+
+          <h3>Business Leadership</h3>
+
+          <p>
+            Ibrahim Salisu Hub.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="gallery-item">
+
+        <img
+          src="file_00000000646081f4bb5e429dd1f281f9.png"
+          alt="Ibrahim Salisu Hub Logo"
+        >
+
+        <div class="gallery-caption">
+
+          <h3>Official Hub Logo</h3>
+
+          <p>
+            Ibrahim Salisu Hub business identity.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= OTHER ACTIVITIES ================= -->
+
+<section id="activities">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Other Activities</h2>
+
+      <p>
+        Other areas of learning and community interest.
+      </p>
+
+    </div>
+
+
+    <div class="activity-grid">
+
+      <div class="activity-card">
+
+        <h3>💻 Cyber Security &amp; Technology</h3>
+
+        <p>
+          Cybersecurity awareness, digital safety and technology learning.
+        </p>
+
+      </div>
+
+
+      <div class="activity-card">
+
+        <h3>📚 Islamic Education &amp; Da'wah</h3>
+
+        <p>
+          Sharing beneficial Islamic educational materials,
+          lectures and reminders.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Contact Us</h2>
+
+      <p style="color:#dceee5;">
+        Contact us for products, services, current prices and orders.
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+      <div class="contact-card">
+
+        <div class="contact-icon">💬</div>
+
+        <h3>WhatsApp</h3>
+
+        <p>09123078253</p>
+
+        <br>
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub">
+          WhatsApp Us
+        </a>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <div class="contact-icon">📞</div>
+
+        <h3>Phone</h3>
+
+        <p>08068332939</p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <div class="contact-icon">✉️</div>
+
+        <h3>Email</h3>
+
+        <p>ibrahimsalisu5678@gmail.com</p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <p>
+    © 2026 <strong>IBRAHIM SALISU HUB</strong>
+  </p>
+
+  <p>
+    Construction • Agriculture • Business Services
+  </p>
+
+  <p>
+    Affordable Prices • Discounts Available
+  </p>
+
+</footer>
+
+</body>
+</html>
