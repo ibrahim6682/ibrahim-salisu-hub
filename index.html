@@ -11,648 +11,714 @@ content="Ibrahim Salisu Hub - Construction, Agriculture, Marketplace and Profess
 
 <style>
 
-:root{
-  --g:#155b3d;
-  --d:#0e402b;
-  --l:#f3f8f5;
-  --s:#eaf4ee;
-  --t:#173f2d;
-  --m:#68766f;
-  --w:#fff;
-  --b:#dce8e1;
-}
-
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
-  scroll-padding-top:82px;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  line-height:1.6;
-  color:var(--t);
-  background:var(--l);
-  overflow-x:hidden;
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:1.6;
+    color:#173f2d;
+    background:#f5f9f7;
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+    text-decoration:none;
+    color:inherit;
 }
 
 img{
-  max-width:100%;
-  display:block;
+    max-width:100%;
+    display:block;
 }
 
-.container{
-  width:min(1120px,92%);
-  margin:auto;
-}
-
-/* ================= HEADER ================= */
+/* =========================
+HEADER
+========================= */
 
 header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:#fff;
-  border-bottom:1px solid var(--b);
-  box-shadow:0 2px 12px #0000000f;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:white;
+    border-bottom:1px solid #dfe8e2;
+    box-shadow:0 2px 10px rgba(0,0,0,.06);
 }
 
 .header-inner{
-  min-height:78px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
+    width:94%;
+    max-width:1200px;
+    margin:auto;
+    min-height:82px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
 }
 
 .brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  min-width:0;
+    display:flex;
+    align-items:center;
+    gap:14px;
 }
 
 .logo{
-  width:62px;
-  height:62px;
-  object-fit:contain;
-  flex:0 0 62px;
-  border-radius:50%;
-}
-
-.brand-text{
-  min-width:0;
+    width:64px;
+    height:64px;
+    object-fit:contain;
+    flex-shrink:0;
 }
 
 .brand-text strong{
-  display:block;
-  font-size:20px;
-  line-height:1.2;
+    display:block;
+    font-size:21px;
+    color:#173f2d;
 }
 
 .brand-text small{
-  display:block;
-  margin-top:5px;
-  color:var(--m);
-  font-size:13px;
+    display:block;
+    margin-top:3px;
+    color:#69766f;
+    font-size:13px;
 }
 
 nav{
-  display:flex;
-  gap:17px;
-  align-items:center;
-  justify-content:flex-end;
+    display:flex;
+    gap:18px;
+    align-items:center;
 }
 
 nav a{
-  font-size:14px;
-  font-weight:bold;
-  color:#234b39;
+    font-weight:bold;
+    color:#234b39;
 }
 
 nav a:hover{
-  color:#16804d;
+    color:#16804d;
 }
 
-/* ================= HERO ================= */
+/* MOBILE MENU BUTTON */
+
+.menu-btn{
+    display:none;
+    border:none;
+    background:#155b3d;
+    color:white;
+    padding:10px 13px;
+    border-radius:8px;
+    font-size:22px;
+}
+
+/* =========================
+HERO
+========================= */
 
 .hero{
-  background:var(--g);
-  color:#fff;
-  padding:70px 0 80px;
+    background:#155b3d;
+    color:white;
+    padding:75px 20px 80px;
 }
 
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:45px;
-  align-items:center;
+.hero-content{
+    width:94%;
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:45px;
+    align-items:center;
 }
 
 .welcome{
-  font-size:17px;
-  letter-spacing:3px;
-  font-weight:bold;
-  color:#cde8d9;
-  margin-bottom:18px;
+    font-size:18px;
+    letter-spacing:3px;
+    font-weight:bold;
+    color:#cde8d9;
+    margin-bottom:18px;
 }
 
 .hero h1{
-  font-size:clamp(42px,6vw,72px);
-  line-height:1.02;
-  margin-bottom:20px;
+    font-size:clamp(42px,7vw,76px);
+    line-height:1.05;
+    margin-bottom:22px;
 }
 
 .hero h2{
-  font-size:clamp(21px,3vw,31px);
-  line-height:1.35;
-  margin-bottom:18px;
+    font-size:clamp(21px,4vw,32px);
+    line-height:1.35;
+    margin-bottom:20px;
 }
 
 .hero p{
-  max-width:680px;
-  font-size:19px;
-  color:#dceee5;
-  margin-bottom:28px;
+    max-width:720px;
+    font-size:19px;
+    color:#dceee5;
+    margin-bottom:28px;
 }
 
 .buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
 }
 
 .btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:52px;
-  padding:13px 24px;
-  border-radius:12px;
-  border:2px solid #d9eee3;
-  font-weight:bold;
-  font-size:16px;
+    display:inline-block;
+    padding:15px 25px;
+    border-radius:12px;
+    border:2px solid #d9eee3;
+    font-weight:bold;
+    font-size:16px;
+    text-align:center;
 }
 
 .btn-primary{
-  background:#fff;
-  color:var(--g);
+    background:white;
+    color:#155b3d;
 }
 
 .btn-outline{
-  color:#fff;
-  background:transparent;
+    background:transparent;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    opacity:.9;
 }
 
 .hero-photo{
-  width:min(330px,100%);
-  aspect-ratio:1;
-  object-fit:cover;
-  border-radius:50%;
-  margin:auto;
-  border:8px solid #d9eee3;
+    text-align:center;
 }
 
-/* ================= GENERAL ================= */
+.profile{
+    width:290px;
+    height:290px;
+    object-fit:cover;
+    border-radius:50%;
+    margin:auto;
+    border:8px solid #d9eee3;
+}
+
+/* =========================
+GENERAL
+========================= */
 
 section{
-  padding:70px 0;
+    padding:75px 20px;
+}
+
+.container{
+    width:94%;
+    max-width:1150px;
+    margin:auto;
 }
 
 .section-title{
-  text-align:center;
-  margin-bottom:40px;
+    text-align:center;
+    margin-bottom:42px;
 }
 
 .section-title h2{
-  font-size:38px;
-  line-height:1.2;
-  margin-bottom:10px;
+    font-size:38px;
+    margin-bottom:10px;
 }
 
 .section-title p{
-  color:var(--m);
-  font-size:17px;
+    color:#66756d;
+    font-size:17px;
 }
 
-/* ================= SERVICES ================= */
+/* =========================
+SERVICES
+========================= */
 
-.services-grid,
-.products-grid,
-.team-grid,
-.contact-grid,
-.gallery-grid{
-  display:grid;
-  gap:20px;
+#services{
+    background:#f5f9f7;
 }
 
 .services-grid{
-  grid-template-columns:repeat(3,1fr);
-}
-
-.card,
-.product,
-.team-card,
-.gallery-item{
-  background:#fff;
-  border:1px solid var(--b);
-  border-radius:16px;
-  box-shadow:0 4px 16px #0000000a;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
 }
 
 .card{
-  padding:25px;
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    border:1px solid #e0e9e4;
+    box-shadow:0 5px 18px rgba(0,0,0,.05);
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
 }
 
 .card-icon{
-  font-size:38px;
-  margin-bottom:12px;
+    font-size:40px;
+    margin-bottom:13px;
 }
 
 .card h3{
-  font-size:21px;
-  margin-bottom:8px;
+    font-size:21px;
+    margin-bottom:8px;
 }
 
-.card p,
-.product p,
-.team-card p,
-.gallery-caption p{
-  color:var(--m);
+.card p{
+    color:#68756e;
 }
 
-/* ================= MARKETPLACE ================= */
+/* =========================
+MARKETPLACE
+========================= */
 
-#marketplace,
-#gallery{
-  background:#fff;
+#marketplace{
+    background:white;
 }
 
 .market-note{
-  max-width:900px;
-  margin:0 auto 35px;
-  padding:18px 20px;
-  background:var(--s);
-  border-left:4px solid var(--g);
-  border-radius:10px;
-  color:#355846;
+    max-width:950px;
+    margin:0 auto 35px;
+    background:#eef6f1;
+    border-left:4px solid #155b3d;
+    padding:18px;
+    border-radius:8px;
+    color:#486257;
 }
 
 .market-note strong{
-  color:var(--g);
+    color:#155b3d;
 }
 
-.market-category{
-  margin-top:42px;
-}
-
-.market-category h3{
-  font-size:25px;
-  margin-bottom:18px;
+.category-title{
+    font-size:28px;
+    margin:38px 0 20px;
+    color:#155b3d;
 }
 
 .products-grid{
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:17px;
 }
 
 .product{
-  padding:18px 14px;
-  text-align:center;
-  background:#fbfdfc;
+    background:#fff;
+    border:1px solid #dfe8e2;
+    border-radius:15px;
+    padding:20px 15px;
+    text-align:center;
+    box-shadow:0 4px 14px rgba(0,0,0,.05);
+    transition:.25s;
+}
+
+.product:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,.09);
 }
 
 .product-icon{
-  font-size:34px;
-  margin-bottom:8px;
+    font-size:42px;
+    margin-bottom:10px;
 }
 
-.product h4{
-  font-size:17px;
-  margin-bottom:5px;
+.product h3{
+    font-size:18px;
+    margin-bottom:6px;
 }
 
 .product p{
-  font-size:13px;
-  min-height:42px;
-  margin-bottom:12px;
+    font-size:13px;
+    color:#6c7872;
+    min-height:43px;
+    margin-bottom:13px;
+}
+
+.price{
+    font-size:13px;
+    font-weight:bold;
+    color:#155b3d;
+    margin-bottom:12px;
 }
 
 .order-btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  background:var(--g);
-  color:#fff;
-  border-radius:8px;
-  padding:9px 12px;
-  font-size:13px;
-  font-weight:bold;
-  width:100%;
+    display:inline-block;
+    background:#155b3d;
+    color:white;
+    padding:9px 13px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:bold;
 }
 
 .order-btn:hover{
-  background:var(--d);
+    background:#0e402b;
 }
 
-/* ================= TEAM ================= */
-
-#team{
-  background:var(--l);
-}
-
-.team-grid{
-  grid-template-columns:repeat(3,1fr);
-}
-
-.team-card{
-  padding:30px 20px;
-  text-align:center;
-}
-
-.team-icon{
-  font-size:42px;
-  margin-bottom:12px;
-}
-
-.team-card h3{
-  margin-bottom:8px;
-}
-
-/* ================= ABOUT ================= */
+/* =========================
+ABOUT
+========================= */
 
 #about{
-  background:#fff;
+    background:#eef6f1;
 }
 
 .about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:25px;
-}
-
-.about-box,
-.focus-box{
-  padding:30px;
-  border-radius:17px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    align-items:stretch;
 }
 
 .about-box{
-  background:var(--s);
+    background:white;
+    padding:32px;
+    border-radius:18px;
 }
 
-.focus-box{
-  background:var(--g);
-  color:#fff;
-}
-
-.about-box h3,
-.focus-box h3{
-  font-size:27px;
-  margin-bottom:15px;
+.about-box h3{
+    font-size:28px;
+    margin-bottom:15px;
 }
 
 .about-box p{
-  color:#596960;
-  margin-bottom:13px;
+    color:#596960;
+    margin-bottom:14px;
 }
 
-.focus-box ul{
-  padding-left:20px;
+.areas{
+    background:#155b3d;
+    color:white;
+    padding:32px;
+    border-radius:18px;
 }
 
-.focus-box li{
-  margin-bottom:9px;
+.areas h3{
+    font-size:27px;
+    margin-bottom:15px;
 }
 
-/* ================= GALLERY ================= */
+.areas ul{
+    padding-left:20px;
+}
+
+.areas li{
+    margin-bottom:9px;
+}
+
+/* =========================
+TEAM
+========================= */
+
+#team{
+    background:white;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.team-card{
+    background:#f5f9f7;
+    padding:30px 20px;
+    text-align:center;
+    border:1px solid #dfe8e2;
+    border-radius:18px;
+}
+
+.team-icon{
+    font-size:48px;
+    margin-bottom:12px;
+}
+
+.team-card h3{
+    margin-bottom:8px;
+}
+
+.team-card p{
+    color:#68756e;
+}
+
+/* =========================
+WHY US
+========================= */
+
+#why{
+    background:#155b3d;
+    color:white;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.why-card{
+    background:rgba(255,255,255,.1);
+    padding:25px 18px;
+    text-align:center;
+    border-radius:14px;
+}
+
+.why-card .icon{
+    font-size:35px;
+    margin-bottom:8px;
+}
+
+.why-card p{
+    color:#dceee5;
+    font-size:14px;
+}
+
+/* =========================
+GALLERY
+========================= */
+
+#gallery{
+    background:white;
+}
 
 .gallery-grid{
-  grid-template-columns:repeat(2,1fr);
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
 }
 
 .gallery-item{
-  overflow:hidden;
+    overflow:hidden;
+    border-radius:16px;
+    background:#f0f5f2;
 }
 
 .gallery-item img{
-  width:100%;
-  height:350px;
-  object-fit:cover;
+    width:100%;
+    height:350px;
+    object-fit:cover;
 }
 
 .gallery-caption{
-  padding:17px;
+    padding:18px;
 }
 
-/* ================= CONTACT ================= */
+.gallery-caption h3{
+    margin-bottom:5px;
+}
+
+.gallery-caption p{
+    color:#68756e;
+}
+
+/* =========================
+CONTACT
+========================= */
 
 #contact{
-  background:var(--g);
-  color:#fff;
+    background:#155b3d;
+    color:white;
 }
 
 #contact .section-title p{
-  color:#dceee5;
+    color:#dceee5;
 }
 
 .contact-grid{
-  grid-template-columns:repeat(3,1fr);
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
 }
 
 .contact-card{
-  background:#ffffff1a;
-  border-radius:15px;
-  padding:25px 18px;
-  text-align:center;
+    background:rgba(255,255,255,.1);
+    padding:28px;
+    border-radius:16px;
+    text-align:center;
 }
 
 .contact-card .icon{
-  font-size:34px;
-  margin-bottom:8px;
+    font-size:35px;
+    margin-bottom:8px;
 }
 
 .contact-card p{
-  color:#dceee5;
-  word-break:break-word;
+    color:#dceee5;
+    word-break:break-word;
 }
 
-/* ================= FOOTER ================= */
+.whatsapp-btn{
+    display:inline-block;
+    margin-top:15px;
+    background:white;
+    color:#155b3d;
+    padding:10px 17px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* =========================
+FOOTER
+========================= */
 
 footer{
-  background:var(--d);
-  color:#dceee5;
-  text-align:center;
-  padding:28px 15px;
-  font-size:14px;
+    background:#0e402b;
+    color:#dceee5;
+    text-align:center;
+    padding:30px 20px;
 }
 
 footer strong{
-  color:#fff;
+    color:white;
 }
 
-/* ================= TABLET ================= */
+/* =========================
+MOBILE
+========================= */
 
 @media(max-width:900px){
 
-  nav{
-    display:none;
-  }
+    nav{
+        display:none;
+    }
 
-  .hero-grid{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
+    .menu-btn{
+        display:block;
+    }
 
-  .hero-copy{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
+    .hero-content{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
 
-  .services-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
+    .hero p{
+        margin-left:auto;
+        margin-right:auto;
+    }
 
-  .products-grid{
-    grid-template-columns:repeat(3,1fr);
-  }
+    .buttons{
+        justify-content:center;
+    }
 
-  .team-grid,
-  .contact-grid{
-    grid-template-columns:1fr;
-  }
+    .products-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
 
-  .contact-grid{
-    max-width:550px;
-    margin:auto;
-  }
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .team-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
 }
-
-/* ================= MOBILE ================= */
 
 @media(max-width:600px){
 
-  .container{
-    width:calc(100% - 28px);
-  }
+    .header-inner{
+        min-height:72px;
+    }
 
-  section{
-    padding:55px 0;
-  }
+    .logo{
+        width:55px;
+        height:55px;
+    }
 
-  .header-inner{
-    min-height:74px;
-  }
+    .brand-text strong{
+        font-size:16px;
+    }
 
-  .logo{
-    width:52px;
-    height:52px;
-    flex-basis:52px;
-  }
+    .brand-text small{
+        font-size:10px;
+    }
 
-  .brand{
-    gap:9px;
-  }
+    .hero{
+        padding:55px 15px 65px;
+    }
 
-  .brand-text strong{
-    font-size:16px;
-    white-space:normal;
-  }
+    .hero h1{
+        font-size:43px;
+    }
 
-  .brand-text small{
-    font-size:10px;
-    line-height:1.25;
-  }
+    .hero h2{
+        font-size:21px;
+    }
 
-  .hero{
-    padding:52px 0 62px;
-  }
+    .hero p{
+        font-size:16px;
+    }
 
-  .welcome{
-    font-size:13px;
-    letter-spacing:2px;
-  }
+    .profile{
+        width:230px;
+        height:230px;
+    }
 
-  .hero h1{
-    font-size:44px;
-  }
+    .services-grid{
+        grid-template-columns:1fr;
+    }
 
-  .hero h2{
-    font-size:21px;
-  }
+    .products-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
 
-  .hero p{
-    font-size:16px;
-  }
+    .product{
+        padding:17px 9px;
+    }
 
-  .buttons{
-    width:100%;
-    flex-direction:column;
-    align-items:stretch;
-  }
+    .product-icon{
+        font-size:34px;
+    }
 
-  .btn{
-    width:100%;
-  }
+    .product h3{
+        font-size:16px;
+    }
 
-  .hero-photo{
-    width:225px;
-  }
+    .product p{
+        font-size:12px;
+    }
 
-  .section-title h2{
-    font-size:30px;
-  }
+    .category-title{
+        font-size:24px;
+    }
 
-  .section-title p{
-    font-size:15px;
-  }
+    .why-grid{
+        grid-template-columns:1fr;
+    }
 
-  .services-grid{
-    grid-template-columns:1fr;
-  }
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
 
-  .products-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
-  }
+    .gallery-item img{
+        height:300px;
+    }
 
-  .product{
-    padding:15px 9px;
-  }
-
-  .product h4{
-    font-size:15px;
-  }
-
-  .product p{
-    font-size:12px;
-  }
-
-  .order-btn{
-    font-size:12px;
-  }
-
-  .about-grid,
-  .gallery-grid{
-    grid-template-columns:1fr;
-  }
-
-  .about-box,
-  .focus-box{
-    padding:24px;
-  }
-
-  .gallery-item img{
-    height:290px;
-  }
-}
-
-/* ================= SMALL PHONE ================= */
-
-@media(max-width:370px){
-
-  .brand-text small{
-    display:none;
-  }
-
-  .hero h1{
-    font-size:39px;
-  }
-
-  .products-grid{
-    grid-template-columns:1fr;
-  }
+    .section-title h2{
+        font-size:31px;
+    }
 }
 
 </style>
@@ -660,13 +726,16 @@ footer strong{
 
 <body>
 
-<!-- ================= HEADER ================= -->
+
+<!-- =========================
+HEADER
+========================= -->
 
 <header>
 
-<div class="container header-inner">
+<div class="header-inner">
 
-<a href="#home" class="brand">
+<div class="brand">
 
 <img
 src="file_00000000646081f4bb5e429dd1f281f9.png"
@@ -684,10 +753,9 @@ Business • Construction • Agriculture
 
 </div>
 
-</a>
+</div>
 
 <nav>
-
 <a href="#home">Home</a>
 <a href="#services">Services</a>
 <a href="#marketplace">Marketplace</a>
@@ -695,21 +763,24 @@ Business • Construction • Agriculture
 <a href="#about">About</a>
 <a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
-
 </nav>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
 
 </div>
 
 </header>
 
 
-<!-- ================= HOME ================= -->
+<!-- =========================
+HOME
+========================= -->
 
 <section id="home" class="hero">
 
-<div class="container hero-grid">
+<div class="hero-content">
 
-<div class="hero-copy">
+<div>
 
 <div class="welcome">
 WELCOME TO IBRAHIM SALISU HUB
@@ -717,18 +788,16 @@ WELCOME TO IBRAHIM SALISU HUB
 
 <h1>
 BUSINESS<br>
-&amp;<br>
-MARKETPLACE
+& MARKETPLACE
 </h1>
 
 <h2>
-Construction • Agriculture •<br>
-Professional Services
+Construction • Agriculture • Professional Services
 </h2>
 
 <p>
-Quality products, practical services and reliable business solutions
-for our customers and community.
+Quality products, practical services and reliable
+business solutions for our customers and community.
 </p>
 
 <div class="buttons">
@@ -746,18 +815,24 @@ Contact Us
 </div>
 
 
+<div class="hero-photo">
+
 <img
 src="IMG_20250615_102604.jpg"
 alt="Ibrahim Salisu"
-class="hero-photo"
+class="profile"
 >
+
+</div>
 
 </div>
 
 </section>
 
 
-<!-- ================= SERVICES ================= -->
+<!-- =========================
+SERVICES
+========================= -->
 
 <section id="services">
 
@@ -776,84 +851,53 @@ Practical services provided by our skilled team.
 
 <div class="services-grid">
 
-
 <div class="card">
-
 <div class="card-icon">🏗️</div>
-
 <h3>Construction</h3>
-
 <p>
 Building works, construction support and project activities.
 </p>
-
 </div>
 
-
 <div class="card">
-
 <div class="card-icon">🎨</div>
-
 <h3>Painting</h3>
-
 <p>
 Interior and exterior painting with quality finishing.
 </p>
-
 </div>
 
-
 <div class="card">
-
 <div class="card-icon">🖌️</div>
-
 <h3>Turollin / Spraying</h3>
-
 <p>
 Decorative finishing and professional surface spraying.
 </p>
-
 </div>
 
-
 <div class="card">
-
 <div class="card-icon">🧱</div>
-
 <h3>Plastering</h3>
-
 <p>
 Wall plastering and professional wall finishing.
 </p>
-
 </div>
 
-
 <div class="card">
-
 <div class="card-icon">🔨</div>
-
 <h3>Screeding</h3>
-
 <p>
-Floor preparation and professional finishing support.
+Floor preparation and professional finishing.
 </p>
-
 </div>
-
 
 <div class="card">
-
 <div class="card-icon">🌾</div>
-
 <h3>Farming</h3>
-
 <p>
-Farming activities, agricultural supplies and agribusiness support.
+Farming activities, agricultural supplies and agribusiness.
 </p>
-
 </div>
-
 
 </div>
 
@@ -862,7 +906,9 @@ Farming activities, agricultural supplies and agribusiness support.
 </section>
 
 
-<!-- ================= MARKETPLACE ================= -->
+<!-- =========================
+MARKETPLACE
+========================= -->
 
 <section id="marketplace">
 
@@ -881,480 +927,312 @@ Construction materials, agricultural supplies and useful products.
 
 <div class="market-note">
 
-💰 <strong>Price &amp; Discount:</strong>
+💰 <strong>Price & Discount:</strong>
 
-Market prices may rise or fall, so we do not display fixed prices.
+<br>
 
-<strong>Contact us for the current price.</strong>
+Market prices may rise or fall. We therefore do not display
+fixed prices on this website.
 
-Affordable prices and discounts are available.
+<strong>
+Contact us for the current price.
+</strong>
+
+<br>
+
+🏷️ Affordable prices and discounts are available.
 
 </div>
 
 
-<!-- CONSTRUCTION MATERIALS -->
+<!-- CONSTRUCTION -->
 
-<div class="market-category">
-
-<h3>🏗️ Construction Materials</h3>
+<h3 class="category-title">
+🏗️ Construction Materials
+</h3>
 
 <div class="products-grid">
 
 
 <div class="product">
-
 <div class="product-icon">🔩</div>
-
-<h4>Rods</h4>
-
-<p>
-Construction iron rods and materials.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Rods.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Iron Rods</h3>
+<p>Construction reinforcement rods and building materials.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub,%20I%20want%20to%20order%20Iron%20Rods.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🧱</div>
-
-<h4>Cement</h4>
-
-<p>
-Cement for building projects.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Cement.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Cement</h3>
+<p>Cement for building and construction projects.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Cement.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🧱</div>
-
-<h4>Blocks</h4>
-
-<p>
-Building blocks and masonry materials.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Blocks.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Blocks</h3>
+<p>Building blocks and masonry materials.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Building%20Blocks.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🏖️</div>
-
-<h4>Sand &amp; Gravel</h4>
-
-<p>
-Construction aggregates.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Sand%20and%20Gravel.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Sand & Gravel</h3>
+<p>Sand, gravel and aggregates for construction.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Sand%20or%20Gravel.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🔨</div>
-
-<h4>Nails</h4>
-
-<p>
-Different sizes of construction nails.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Nails.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Nails</h3>
+<p>Different sizes of nails for construction works.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Nails.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🪢</div>
-
-<h4>Binding Wire</h4>
-
-<p>
-Wire for reinforcement and construction.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Binding%20Wire.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Binding Wire</h3>
+<p>Binding wire for reinforcement and construction.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Binding%20Wire.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🎨</div>
-
-<h4>Paint</h4>
-
-<p>
-Paint and finishing products.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Paint.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Paint</h3>
+<p>Paint and finishing products for buildings.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Paint.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🚪</div>
-
-<h4>Doors &amp; Windows</h4>
-
-<p>
-Doors, windows and related materials.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Doors%20and%20Windows.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Doors & Windows</h3>
+<p>Doors, windows and related building materials.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Doors%20or%20Windows.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🚰</div>
-
-<h4>Plumbing Materials</h4>
-
-<p>
-Pipes, fittings and plumbing materials.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Plumbing%20Materials.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Plumbing Materials</h3>
+<p>Pipes, fittings and useful plumbing materials.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Plumbing%20Materials.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">💡</div>
-
-<h4>Electrical Materials</h4>
-
-<p>
-Electrical materials for building projects.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Electrical%20Materials.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Electrical Materials</h3>
+<p>Electrical materials for building projects.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Electrical%20Materials.">Ask Price / Order</a>
 </div>
 
 
+<div class="product">
+<div class="product-icon">🪵</div>
+<h3>Roofing Materials</h3>
+<p>Roofing sheets and related roofing materials.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Roofing%20Materials.">Ask Price / Order</a>
 </div>
 
+
+<div class="product">
+<div class="product-icon">🪨</div>
+<h3>Tiles</h3>
+<p>Floor and wall tiles for modern finishing.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Tiles.">Ask Price / Order</a>
+</div>
+
+
+<div class="product">
+<div class="product-icon">🧰</div>
+<h3>Building Tools</h3>
+<p>Useful tools for masons, painters and builders.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Building%20Tools.">Ask Price / Order</a>
+</div>
+
+
+<div class="product">
+<div class="product-icon">🪣</div>
+<h3>Construction Buckets</h3>
+<p>Strong buckets and containers for construction works.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Construction%20Buckets.">Ask Price / Order</a>
 </div>
 
 
 <!-- AGRICULTURE -->
 
-<div class="market-category">
+</div>
 
-<h3>🌾 Agricultural Products &amp; Supplies</h3>
+
+<h3 class="category-title">
+🌾 Agricultural Products & Supplies
+</h3>
 
 <div class="products-grid">
 
 
 <div class="product">
-
 <div class="product-icon">🌽</div>
-
-<h4>Maize Seeds</h4>
-
-<p>
-Quality maize seeds for farming.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Maize%20Seeds.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Maize Seeds</h3>
+<p>Quality maize seeds for farming and production.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Maize%20Seeds.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🌾</div>
-
-<h4>Rice Seeds</h4>
-
-<p>
-Rice seeds for agricultural production.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Rice%20Seeds.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Rice Seeds</h3>
+<p>Rice seeds for agricultural production.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Rice%20Seeds.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🌱</div>
-
-<h4>Beans Seeds</h4>
-
-<p>
-Seeds for beans production.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Beans%20Seeds.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Beans Seeds</h3>
+<p>Quality seeds for beans production.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Beans%20Seeds.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🌾</div>
-
-<h4>Millet Seeds</h4>
-
-<p>
-Quality millet seeds for farming.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Millet%20Seeds.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Millet Seeds</h3>
+<p>Quality millet seeds for farming.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Millet%20Seeds.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🌿</div>
-
-<h4>Fertilizer</h4>
-
-<p>
-Crop nutrition and fertilizer supplies.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Fertilizer.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Fertilizer</h3>
+<p>Fertilizer and crop nutrition supplies.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Fertilizer.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🧪</div>
-
-<h4>Crop Protection</h4>
-
-<p>
-Crop protection and farm treatment products.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Crop%20Protection%20Products.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Crop Protection</h3>
+<p>Crop protection and farm treatment products.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Crop%20Protection%20Products.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
-<div class="product-icon">💦</div>
-
-<h4>Sprayers</h4>
-
-<p>
-Farm spraying equipment and accessories.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Sprayers.">
-
-Ask Price / Order
-
-</a>
-
+<div class="product-icon">💧</div>
+<h3>Sprayers</h3>
+<p>Farm spraying equipment and accessories.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Farm%20Sprayers.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🔨</div>
-
-<h4>Farm Tools</h4>
-
-<p>
-Useful tools for farming activities.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Farm%20Tools.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Farm Tools</h3>
+<p>Useful tools for everyday farming activities.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Farm%20Tools.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🔪</div>
-
-<h4>Cutlass</h4>
-
-<p>
-Farming cutlasses and related tools.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Cutlass.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Cutlass</h3>
+<p>Farming cutlasses and related tools.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Cutlasses.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
-<div class="product-icon">🪓</div>
-
-<h4>Hoe</h4>
-
-<p>
-Farm hoes for cultivation.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Hoe.">
-
-Ask Price / Order
-
-</a>
-
+<div class="product-icon">⛏️</div>
+<h3>Hoe</h3>
+<p>Farm hoes for cultivation and field work.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Farm%20Hoes.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🪣</div>
-
-<h4>Watering Can</h4>
-
-<p>
-Watering equipment for farming and gardening.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Watering%20Can.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Watering Can</h3>
+<p>Watering equipment for farming and gardening.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Watering%20Cans.">Ask Price / Order</a>
 </div>
 
 
 <div class="product">
-
 <div class="product-icon">🚜</div>
-
-<h4>Farm Equipment</h4>
-
-<p>
-Equipment for agricultural activities.
-</p>
-
-<a class="order-btn"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20the%20current%20price%20of%20Farm%20Equipment.">
-
-Ask Price / Order
-
-</a>
-
+<h3>Farm Equipment</h3>
+<p>Various equipment for agricultural activities.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Farm%20Equipment.">Ask Price / Order</a>
 </div>
 
 
+<div class="product">
+<div class="product-icon">🧺</div>
+<h3>Harvesting Tools</h3>
+<p>Tools and equipment for harvesting activities.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Harvesting%20Tools.">Ask Price / Order</a>
+</div>
+
+
+<div class="product">
+<div class="product-icon">🌱</div>
+<h3>Seedling Materials</h3>
+<p>Materials useful for nursery and crop production.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Seedling%20Materials.">Ask Price / Order</a>
+</div>
+
+
+<div class="product">
+<div class="product-icon">📦</div>
+<h3>Farm Storage Bags</h3>
+<p>Bags and storage materials for agricultural products.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20order%20Farm%20Storage%20Bags.">Ask Price / Order</a>
+</div>
+
+
+<div class="product">
+<div class="product-icon">🚜</div>
+<h3>Tractor Services</h3>
+<p>Farm machinery support and agricultural services.</p>
+<div class="price">Ask for Current Price</div>
+<a class="order-btn" href="https://wa.me/2349123078253?text=Hello,%20I%20want%20to%20ask%20about%20Tractor%20Services.">Ask Price / Order</a>
 </div>
 
 </div>
@@ -1364,7 +1242,9 @@ Ask Price / Order
 </section>
 
 
-<!-- ================= TEAM ================= -->
+<!-- =========================
+TEAM
+========================= -->
 
 <section id="team">
 
@@ -1380,9 +1260,7 @@ Working together to provide quality services and products.
 
 </div>
 
-
 <div class="team-grid">
-
 
 <div class="team-card">
 
@@ -1412,7 +1290,7 @@ Skilled workers supporting building and finishing projects.
 
 <div class="team-card">
 
-<div class="team-icon">🧑‍🌾</div>
+<div class="team-icon">👨‍🌾</div>
 
 <h3>Agriculture Team</h3>
 
@@ -1422,6 +1300,58 @@ Farming, farm supplies and agricultural activities.
 
 </div>
 
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+WHY US
+========================= -->
+
+<section id="why">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2 style="color:white;">
+Why Choose Us?
+</h2>
+
+<p>
+Reliable services, useful products and customer-focused business.
+</p>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+<div class="icon">🤝</div>
+<h3>Reliable</h3>
+<p>We work with trusted people and partners.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">💰</div>
+<h3>Affordable</h3>
+<p>Competitive prices and available discounts.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">⭐</div>
+<h3>Quality</h3>
+<p>We focus on quality products and services.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">📞</div>
+<h3>Customer Support</h3>
+<p>Contact us for current prices and orders.</p>
+</div>
 
 </div>
 
@@ -1430,7 +1360,9 @@ Farming, farm supplies and agricultural activities.
 </section>
 
 
-<!-- ================= ABOUT ================= -->
+<!-- =========================
+ABOUT
+========================= -->
 
 <section id="about">
 
@@ -1446,34 +1378,32 @@ A growing business connecting construction, agriculture and marketplace services
 
 </div>
 
-
 <div class="about-grid">
-
 
 <div class="about-box">
 
 <h3>Who We Are</h3>
 
 <p>
-Ibrahim Salisu Hub is a business platform focused on construction
-services, agricultural activities and the supply of useful products
-and materials.
+Ibrahim Salisu Hub is a business platform focused on
+construction services, agricultural activities and the supply
+of useful products and materials.
 </p>
 
 <p>
-We work with a team of skilled workers, partners and business contacts
-to serve customers and support projects.
+We work with a team of skilled workers, partners and business
+contacts to serve customers and support projects.
 </p>
 
 <p>
-Our goal is to provide quality work, useful products, fair prices
-and reliable customer service.
+Our goal is to provide quality work, useful products,
+fair prices and reliable customer service.
 </p>
 
 </div>
 
 
-<div class="focus-box">
+<div class="areas">
 
 <h3>Our Business Focus</h3>
 
@@ -1497,7 +1427,6 @@ and reliable customer service.
 
 </div>
 
-
 </div>
 
 </div>
@@ -1505,7 +1434,9 @@ and reliable customer service.
 </section>
 
 
-<!-- ================= GALLERY ================= -->
+<!-- =========================
+GALLERY
+========================= -->
 
 <section id="gallery">
 
@@ -1513,17 +1444,16 @@ and reliable customer service.
 
 <div class="section-title">
 
-<h2>Projects &amp; Gallery</h2>
+<h2>Projects & Gallery</h2>
 
 <p>
-Some of our activities, work and interests.
+Some of our activities, work and business identity.
 </p>
 
 </div>
 
 
 <div class="gallery-grid">
-
 
 <div class="gallery-item">
 
@@ -1534,7 +1464,7 @@ alt="Ibrahim Salisu"
 
 <div class="gallery-caption">
 
-<h3>Profile</h3>
+<h3>Our Business</h3>
 
 <p>
 Ibrahim Salisu Hub.
@@ -1554,16 +1484,15 @@ alt="Ibrahim Salisu Hub Logo"
 
 <div class="gallery-caption">
 
-<h3>Our Hub Logo</h3>
+<h3>Our Brand Logo</h3>
 
 <p>
-Ibrahim Salisu Hub identity and brand.
+Official Ibrahim Salisu Hub business identity.
 </p>
 
 </div>
 
 </div>
-
 
 </div>
 
@@ -1572,7 +1501,9 @@ Ibrahim Salisu Hub identity and brand.
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- =========================
+CONTACT
+========================= -->
 
 <section id="contact">
 
@@ -1592,46 +1523,65 @@ Ask for current prices, discounts, services or place an order.
 <div class="contact-grid">
 
 
-<a
-class="contact-card"
-href="https://wa.me/2349123078253?text=Hello%20Ibrahim%20Salisu%20Hub%2C%20I%20want%20to%20make%20an%20inquiry."
->
+<div class="contact-card">
 
 <div class="icon">💬</div>
 
 <h3>WhatsApp</h3>
 
-<p>09123078253</p>
-
-</a>
-
+<p>
+09123078253
+</p>
 
 <a
-class="contact-card"
-href="tel:08068332939"
+class="whatsapp-btn"
+href="https://wa.me/2349123078253"
+target="_blank"
 >
+Chat on WhatsApp
+</a>
+
+</div>
+
+
+<div class="contact-card">
 
 <div class="icon">📞</div>
 
 <h3>Phone</h3>
 
-<p>08068332939</p>
-
-</a>
-
+<p>
+08068332939
+</p>
 
 <a
-class="contact-card"
-href="mailto:ibrahimsalisu5678@gmail.com"
+class="whatsapp-btn"
+href="tel:+2348068332939"
 >
+Call Us
+</a>
+
+</div>
+
+
+<div class="contact-card">
 
 <div class="icon">✉️</div>
 
 <h3>Email</h3>
 
-<p>ibrahimsalisu5678@gmail.com</p>
+<p>
+ibrahimsalisu5678@gmail.com
+</p>
 
+<a
+class="whatsapp-btn"
+href="mailto:ibrahimsalisu5678@gmail.com"
+>
+Send Email
 </a>
+
+</div>
 
 
 </div>
@@ -1641,7 +1591,9 @@ href="mailto:ibrahimsalisu5678@gmail.com"
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================
+FOOTER
+========================= -->
 
 <footer>
 
@@ -1654,8 +1606,36 @@ All Rights Reserved.
 Business • Construction • Agriculture
 </p>
 
+<p>
+Quality Products • Practical Services • Reliable Solutions
+</p>
+
 </footer>
 
+
+<script>
+
+function toggleMenu(){
+
+    const nav = document.querySelector("nav");
+
+    if(nav.style.display === "flex"){
+        nav.style.display = "none";
+    }else{
+        nav.style.display = "flex";
+        nav.style.flexDirection = "column";
+        nav.style.position = "absolute";
+        nav.style.top = "72px";
+        nav.style.right = "3%";
+        nav.style.background = "white";
+        nav.style.padding = "20px";
+        nav.style.borderRadius = "10px";
+        nav.style.boxShadow = "0 5px 20px rgba(0,0,0,.15)";
+    }
+
+}
+
+</script>
 
 </body>
 </html>
